@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import FiveM from "@/components/FiveM";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -66,13 +67,16 @@ export default function Home() {
           <Experience />
           <div className="section-divider" />
           <Projects />
+          <div className="section-divider" />
+          <FiveM />
           <Marquee
             phrases={[
-              "BUILDING THE FUTURE",
-              "ONE LINE AT A TIME",
-              "CLEAN CODE",
-              "SHIP FAST",
-              "SCALE SMART",
+              "FIVEM",
+              "CUSTOM FRAMEWORKS",
+              "LUA",
+              "NUI",
+              "SERVER SYSTEMS",
+              "BUILT FROM SCRATCH",
             ]}
           />
           <Testimonials />

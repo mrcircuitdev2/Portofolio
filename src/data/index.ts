@@ -183,6 +183,134 @@ export const robloxProjects: RobloxProject[] = [
   },
 ];
 
+export interface FiveMFramework {
+  id: number;
+  title: string;
+  category: string;
+  description: string;
+  tags: string[];
+}
+
+export interface FiveMServer {
+  id: number;
+  name: string;
+  role: string;
+  period: string;
+  description: string;
+  tags: string[];
+}
+
+export const fivemFrameworks: FiveMFramework[] = [
+  {
+    id: 1,
+    title: "Custom Framework Core",
+    category: "Core",
+    description:
+      "A framework written from scratch: player state, character loading, permissions, a shared event layer, and a module loader so new features drop in from config instead of patching core files.",
+    tags: ["Lua", "Custom Framework", "SQL"],
+  },
+  {
+    id: 2,
+    title: "NUI Interface Suite",
+    category: "Interface",
+    description:
+      "Every screen in the build is custom NUI — HUD and status bars, inventory, banking, phone, and staff menus — sharing one design system so the server feels like a single product.",
+    tags: ["NUI", "Lua", "Design"],
+  },
+  {
+    id: 3,
+    title: "Inventory & Stashes",
+    category: "Systems",
+    description:
+      "Weight-based inventory with drag, split, give, and drop-zone support, plus shared stashes, gloveboxes, and trunk storage that persist through the database.",
+    tags: ["Lua", "NUI", "MySQL"],
+  },
+  {
+    id: 4,
+    title: "Jobs & Economy",
+    category: "Gameplay",
+    description:
+      "A job framework with ranks, duty toggles, paychecks, and config-driven payouts, paired with a player-run economy that stays balanced without money flooding the server.",
+    tags: ["Lua", "Economy", "Custom Framework"],
+  },
+  {
+    id: 5,
+    title: "Vehicles & Garages",
+    category: "Vehicles",
+    description:
+      "Ownership, keys, garages, and impound built on the custom core, restoring damage, fuel, and tuning per vehicle with a handling layer tuned for feel.",
+    tags: ["Lua", "Vehicles", "SQL"],
+  },
+  {
+    id: 6,
+    title: "Staff & Admin Tooling",
+    category: "Tooling",
+    description:
+      "An in-game admin panel for logs, player lookup, permissions, and reports, so staff can run the server without touching the database directly.",
+    tags: ["Lua", "NUI", "Tooling"],
+  },
+];
+
+export const fivemScreenshots: string[] = [
+  "/fivem/fivem-01.webp",
+  "/fivem/fivem-02.webp",
+  "/fivem/fivem-03.webp",
+  "/fivem/fivem-04.webp",
+  "/fivem/fivem-05.webp",
+  "/fivem/fivem-06.webp",
+  "/fivem/fivem-07.webp",
+  "/fivem/fivem-08.webp",
+  "/fivem/fivem-09.webp",
+  "/fivem/fivem-10.webp",
+  "/fivem/fivem-11.webp",
+  "/fivem/fivem-12.webp",
+  "/fivem/fivem-13.webp",
+  "/fivem/fivem-14.webp",
+  "/fivem/fivem-15.webp",
+  "/fivem/fivem-16.webp",
+  "/fivem/fivem-17.webp",
+  "/fivem/fivem-18.webp",
+];
+
+export const fivemServers: FiveMServer[] = [
+  {
+    id: 1,
+    name: "Midnight Roleplay",
+    role: "Lead Developer",
+    period: "2025 — Present",
+    description:
+      "Own the custom framework end to end — core, jobs, inventory, banking, and the UI — plus database tuning for a 64-slot community.",
+    tags: ["Custom Framework", "Lua", "SQL"],
+  },
+  {
+    id: 2,
+    name: "Apex Roleplay",
+    role: "Server Developer",
+    period: "2024 — 2025",
+    description:
+      "Built the jobs, garage, and HUD that run on the custom framework, and optimized resources to cut idle usage across the board.",
+    tags: ["Custom Framework", "NUI", "Optimization"],
+  },
+  {
+    id: 3,
+    name: "Nova Life RP",
+    role: "UI Developer",
+    period: "2024",
+    description:
+      "Designed and shipped NUI for banking, inventory, and character creation, keeping every screen responsive and consistent in style.",
+    tags: ["NUI", "Design", "Lua"],
+  },
+  {
+    id: 4,
+    name: "Legacy Roleplay",
+    role: "Systems Developer",
+    period: "2023 — 2024",
+    description:
+      "Implemented the economy loop, businesses, and stash systems, plus staff logging and anti-exploit checks on the custom core.",
+    tags: ["Economy", "Systems", "Lua"],
+  },
+];
+
 export interface Experience {
   id: number;
   title: string;
@@ -308,6 +436,7 @@ export const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Roblox", href: "#roblox" },
+  { label: "FiveM", href: "#fivem" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
