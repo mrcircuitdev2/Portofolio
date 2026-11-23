@@ -25,7 +25,7 @@ export default function Home() {
       <CustomCursor />
       <ParticleField />
       <Navbar />
-      <main className="relative z-10">
+      <main className="relative z-10 circuit-trace">
         <Hero />
         <Marquee phrases={["UNITY", "VR", "C#", "GAMEPLAY", "MOVEMENT", "MADE BY CIRCUIT"]} />
         <About />
