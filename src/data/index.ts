@@ -1,15 +1,23 @@
 export const personalInfo = {
-  name: "Carter",
-  displayName: "Carter",
-  handle: "Carter",
+  name: "Circuit",
+  displayName: "Circuit",
+  handle: "Circuit",
   email: "carter21232@gmail.com",
-  title: "Game developer • Unity, Roblox, and FiveM",
-  roles: ["Unity game developer", "Roblox scripter", "FiveM developer", "Gameplay programmer"],
-  bio: "Hey, I'm Carter. I like making games and figuring out how to make movement and controls feel good. I mostly work with Unity, Roblox, and FiveM, and I enjoy trying out ideas and learning as I go.",
-  bioContinued: "I've been learning Unity and C#, and I also make Roblox projects with Lua. Some things I've worked on include movement, vehicle handling, VR interactions, and UI. I'm still learning, so I'm always trying to get better and make cooler projects.",
-  tagline: "I make game systems and projects, and I'm always learning something new.",
+  title: "Gameplay Programmer • Unity & Roblox Developer",
+  roles: [
+    "Gameplay Systems Developer",
+    "Roblox Lua Programmer",
+    "Vehicle Handling Engineer",
+    "Movement & Physics Specialist",
+  ],
+  bio: `I build gameplay systems designed to feel smooth, responsive, and natural in motion. My focus is on vehicle handling, movement logic, terrain interaction, and player feedback — especially in driving and off-road experiences where feel matters as much as function.`,
+  bioContinued: `I bring 2.5 years of Unity development, 1 year of Lua scripting, and hands-on experience building Roblox systems for driving, exploration, and interactive world feedback. I enjoy creating mechanics that feel polished, readable, and fun to use from the player's perspective.`,
+  tagline:
+    "Building smooth gameplay systems for driving, movement, and immersive Roblox experiences.",
   location: "Canada",
-  socials: { github: "" },
+  socials: {
+    github: "",
+  },
 };
 
 export interface Project {
@@ -36,8 +44,9 @@ export interface RobloxProject {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Hurricane VR Asset Practice",
-    description: "I used the Hurricane VR asset in Unity to try out its VR physics and interactions. The asset was made by its original creator. I don't own it or claim that I created it.",
+    title: "Hurricane VR Asset Work",
+    description:
+      "I used an existing Hurricane VR asset in Unity to explore VR locomotion, grabbing, and momentum. I do not own the asset or claim to have created it.",
     tags: ["Unity", "C#", "VR", "Physics"],
     gradient: "from-cyan-500/20 to-blue-500/20",
     image: "/projects/hurricane-vr.png",
@@ -45,36 +54,41 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "Gorilla Tag Fan Game Prototype",
-    description: "A small VR fan-game prototype inspired by Gorilla Tag. I experimented with tracked movement and climbing, and worked on making the movement feel fun.",
+    description:
+      "A fast-paced VR fan game inspired by Gorilla Tag. Features tracked movement, climbing interactions, and polished player feel for immersive multiplayer sessions.",
     tags: ["Unity", "C#", "VR", "Multiplayer"],
     gradient: "from-emerald-500/20 to-teal-500/20",
     image: "/projects/gorillatag-fangame.jpg",
   },
   {
     id: 3,
-    title: "VR Interaction Practice",
-    description: "Some experiments with grabbing objects, collisions, and movement in VR. I made these to learn how the different parts work together.",
+    title: "Full-Body Interaction System",
+    description:
+      "Reusable VR interaction systems for hand/object physics, collision response, and realistic movement across tracked rigs.",
     tags: ["Unity", "C#", "Physics", "VR"],
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
     id: 4,
-    title: "Unity Gameplay Tools",
-    description: "A collection of small C# tools and prototypes I've made while learning Unity and testing gameplay ideas.",
+    title: "Custom Gameplay Toolkit",
+    description:
+      "A library of C# tools for fast prototyping, state-driven movement, and polished input handling in Unity projects.",
     tags: ["Unity", "C#", "Tools"],
     gradient: "from-orange-500/20 to-yellow-500/20",
   },
   {
     id: 5,
-    title: "VR Demo",
-    description: "A demo where I tried out VR interactions, physics, and feedback from the environment.",
+    title: "Interactive VR Demo",
+    description:
+      "A polished demo experience showcasing precision VR interaction, environmental feedback, and immersive physics-driven gameplay.",
     tags: ["Unity", "VR", "Game Dev"],
     gradient: "from-blue-500/20 to-indigo-500/20",
   },
   {
     id: 6,
-    title: "This Portfolio",
-    description: "I built this portfolio with Next.js, TypeScript, and Tailwind CSS to share some of the things I've been working on.",
+    title: "Portfolio Showcase",
+    description:
+      "A modern portfolio built with Next.js and Tailwind to highlight Unity systems, VR projects, and real-time gameplay work.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     gradient: "from-slate-500/20 to-slate-700/20",
   },
@@ -92,44 +106,47 @@ const devicon = (name: string, variant = "original") =>
   `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${name}/${name}-${variant}.svg`;
 
 export const skills: Skill[] = [
-  { name: "C#", category: "language", color: "#239120", icon: devicon("csharp"), desc: "I use C# for Unity projects and gameplay experiments." },
-  { name: "Unity", category: "gamedev", color: "#ffffff", icon: devicon("unity"), desc: "The game engine I use for prototypes and VR projects." },
-  { name: "Lua", category: "language", color: "#9977FF", icon: devicon("lua"), desc: "I use Lua for Roblox scripting and gameplay systems." },
-  { name: "Roblox", category: "gamedev", color: "#00B4FF", icon: "", desc: "I've made Roblox movement, vehicle, and gameplay projects." },
-  { name: "VR", category: "gamedev", color: "#8b5cf6", icon: "", desc: "I've been learning about VR movement and interactions." },
-  { name: "Physics", category: "gamedev", color: "#f97316", icon: "", desc: "I like experimenting with movement and collisions." },
-  { name: "Gorilla Tag", category: "gamedev", color: "#22c55e", icon: "", desc: "I've made fan-game prototypes inspired by its movement." },
-  { name: "Unreal Engine", category: "gamedev", color: "#00c2ff", icon: "", desc: "I've tried Unreal for gameplay prototypes." },
-  { name: "TypeScript", category: "language", color: "#3178C6", icon: devicon("typescript"), desc: "I use TypeScript for web projects like this portfolio." },
-  { name: "React", category: "frontend", color: "#61DAFB", icon: devicon("react"), desc: "I've used React to build web interfaces." },
-  { name: "Node.js", category: "backend", color: "#339933", icon: devicon("nodejs"), desc: "I've used Node.js for small tools and web projects." },
-  { name: "Git", category: "tool", color: "#F05032", icon: devicon("git"), desc: "I use Git to keep track of changes to my projects." },
+  { name: "C#", category: "language", color: "#239120", icon: devicon("csharp"), desc: "Core language for Unity gameplay and VR systems." },
+  { name: "Unity", category: "gamedev", color: "#ffffff", icon: devicon("unity"), desc: "Primary engine for VR games, physics, and interactive systems." },
+  { name: "Lua", category: "language", color: "#9977FF", icon: devicon("lua"), desc: "Roblox gameplay scripting, movement logic, and vehicle tuning." },
+  { name: "Roblox", category: "gamedev", color: "#00B4FF", icon: "", desc: "Movement systems, vehicle tuning, and gameplay logic for social sandbox experiences." },
+  { name: "VR", category: "gamedev", color: "#8b5cf6", icon: "", desc: "Locomotion, interaction design, and smooth immersive player feedback." },
+  { name: "Physics", category: "gamedev", color: "#f97316", icon: "", desc: "Movement feel, collision response, and gameplay-driven motion systems." },
+  { name: "Gorilla Tag", category: "gamedev", color: "#22c55e", icon: "", desc: "Movement-focused gameplay design and responsive traversal systems." },
+  { name: "Unreal Engine", category: "gamedev", color: "#00c2ff", icon: "", desc: "Additional engine experience for interactive prototypes." },
+  { name: "TypeScript", category: "language", color: "#3178C6", icon: devicon("typescript"), desc: "Web tooling, portfolio interfaces, and supporting systems." },
+  { name: "React", category: "frontend", color: "#61DAFB", icon: devicon("react"), desc: "Modern UI development for portfolio and tools." },
+  { name: "Node.js", category: "backend", color: "#339933", icon: devicon("nodejs"), desc: "Backend services and utility tooling for game projects." },
+  { name: "Git", category: "tool", color: "#F05032", icon: devicon("git"), desc: "Version control workflows and collaborative development." },
 ];
 
 export const robloxProjects: RobloxProject[] = [
   {
     id: 1,
-    title: "Movement System",
+    title: "Advanced Movement System",
     label: "Movement",
-    description: "A movement prototype with wall-running, sliding, sprinting, and momentum. I made it to experiment with different ways to move around a game.",
+    description:
+      "A traversal system built for fast, responsive movement in action-heavy gameplay. It includes wall-running, sliding, momentum-based transitions, and controlled sprinting to create a more fluid and engaging player feel.",
     tags: ["Lua", "Roblox", "Movement", "Physics"],
     video: "/roblox/Movement.mov",
     accent: "from-cyan-500/30 to-sky-500/15",
   },
   {
     id: 2,
-    title: "Vehicle Handling",
+    title: "Vehicle Handling System",
     label: "Vehicle",
-    description: "A Roblox driving system where I worked on steering, acceleration, and braking to make the vehicles feel responsive.",
+    description:
+      "A driving system designed around smooth acceleration, braking feel, steering response, and manual-style control. The tuning focuses on vehicle feel and responsiveness, especially important in off-road and muddy gameplay.",
     tags: ["Lua", "Roblox", "Vehicles", "Driving"],
     video: "/roblox/Vehicle.mp4",
     accent: "from-violet-500/30 to-fuchsia-500/15",
   },
   {
     id: 3,
-    title: "Mud Footprints",
+    title: "Mud Footprint System",
     label: "Mud",
-    description: "An experiment that adds footprints and other feedback when moving through muddy ground.",
+    description:
+      "A terrain interaction system that adds surface feedback to movement by creating mud footprints and reinforcing the feel of driving through wet or muddy ground.",
     tags: ["Lua", "Roblox", "Terrain", "VFX"],
     video: "/roblox/Mud.mp4",
     accent: "from-amber-500/30 to-orange-500/15",
@@ -138,16 +155,18 @@ export const robloxProjects: RobloxProject[] = [
     id: 4,
     title: "Plot Saving UI",
     label: "SavedSlots",
-    description: "A simple save-slot screen for showing and choosing saved plots.",
+    description:
+      "A save-slot interface designed to be clear, organized, and easy to use during active play.",
     tags: ["Lua", "UI", "Systems", "Interface"],
     video: "/roblox/SavedSlots.png",
     accent: "from-emerald-500/30 to-teal-500/15",
   },
   {
     id: 5,
-    title: "Settings Menu",
+    title: "Pixel Settings Menu",
     label: "Settings",
-    description: "A pixel-style settings menu with controls for changing game options.",
+    description:
+      "A stylized settings menu with readable controls, clear hierarchy, and a polished visual identity.",
     tags: ["Lua", "UI", "Settings", "Design"],
     video: "/roblox/Settings.png",
     accent: "from-rose-500/30 to-pink-500/15",
@@ -156,7 +175,8 @@ export const robloxProjects: RobloxProject[] = [
     id: 6,
     title: "Character Selection UI",
     label: "Selection",
-    description: "A screen for looking through and choosing a character in a game.",
+    description:
+      "A character selection interface built to make player choices feel clear, quick, and intentional.",
     tags: ["Lua", "UI", "Selection", "Matchmaking"],
     video: "/roblox/Selection.png",
     accent: "from-indigo-500/30 to-blue-500/15",
@@ -180,11 +200,38 @@ export interface FiveMServer {
   tags: string[];
 }
 
-export const fivemFrameworks: FiveMFramework[] = [];
-export const fivemScreenshots: string[] = Array.from(
-  { length: 18 },
-  (_, index) => `/fivem/fivem-${String(index + 1).padStart(2, "0")}.webp`
-);
+export const fivemFrameworks: FiveMFramework[] = [
+  {
+    id: 1,
+    title: "Custom Framework Work",
+    category: "Core",
+    description:
+      "I worked with a custom FiveM framework and made Lua scripts and interface changes. The framework itself was not created by me.",
+    tags: ["Lua", "Custom Framework", "SQL"],
+  },
+];
+
+export const fivemScreenshots: string[] = [
+  "/fivem/fivem-01.webp",
+  "/fivem/fivem-02.webp",
+  "/fivem/fivem-03.webp",
+  "/fivem/fivem-04.webp",
+  "/fivem/fivem-05.webp",
+  "/fivem/fivem-06.webp",
+  "/fivem/fivem-07.webp",
+  "/fivem/fivem-08.webp",
+  "/fivem/fivem-09.webp",
+  "/fivem/fivem-10.webp",
+  "/fivem/fivem-11.webp",
+  "/fivem/fivem-12.webp",
+  "/fivem/fivem-13.webp",
+  "/fivem/fivem-14.webp",
+  "/fivem/fivem-15.webp",
+  "/fivem/fivem-16.webp",
+  "/fivem/fivem-17.webp",
+  "/fivem/fivem-18.webp",
+];
+
 export const fivemServers: FiveMServer[] = [];
 
 export interface Experience {
@@ -199,46 +246,73 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     id: 1,
-    title: "Unity and VR Projects",
-    company: "Personal projects",
+    title: "Unity & VR Systems Developer",
+    company: "Independent",
     period: "Jan 2024 — Present",
     description: [
-      "I experiment with VR movement and physics in Unity.",
-      "I've made fan-game prototypes inspired by Gorilla Tag.",
-      "I make small C# tools while learning how to build game systems.",
+      "Designing full-body physics systems and VR motion mechanics in Unity.",
+      "Building Gorilla Tag-inspired fan games with tracked locomotion and climbing.",
+      "Creating reusable C# gameplay tools for interaction, input, and collision response.",
     ],
     type: "work",
   },
   {
     id: 2,
-    title: "Hurricane VR Asset Practice",
-    company: "Personal project",
-    period: "Personal project",
+    title: "Hurricane VR Asset Developer",
+    company: "Personal Project",
+    period: "2024 — Present",
     description: [
-      "I tried out the Hurricane VR asset and learned how its interactions work.",
-      "The asset belongs to its original creator; I did not make it and do not claim to own it.",
+      "Worked with the Hurricane VR asset to test locomotion and hand interactions.",
+      "The Hurricane VR asset belongs to its original creator; I do not own or claim to have created it.",
+      "Used the asset in Unity demos and prototypes for learning and experimentation.",
     ],
     type: "work",
   },
   {
     id: 3,
-    title: "Web Projects",
-    company: "Personal projects",
+    title: "Full Stack Developer",
+    company: "Personal Projects",
     period: "Sep 2025 — Present",
     description: [
-      "I built this portfolio with Next.js, TypeScript, and Tailwind CSS.",
-      "I keep learning by making small web tools and trying new ideas.",
+      "Built portfolio and tooling interfaces using Next.js, TypeScript, and Tailwind CSS.",
+      "Created backend utilities and deployment workflows to support game project assets.",
+      "Maintained clean code structure for both web and gameplay systems.",
     ],
     type: "work",
   },
   {
     id: 4,
-    title: "Game Development",
-    company: "Self-learning",
-    period: "2021 — Present",
+    title: "Unreal Engine Prototyper",
+    company: "Independent",
+    period: "2025 — 2026",
     description: [
-      "I learn by making projects and trying things out in Unity, Roblox, and Unreal.",
-      "I'm interested in movement, physics, and how games respond to players.",
+      "Developed gameplay prototypes and interactive systems in Unreal Engine.",
+      "Explored advanced animation, physics, and input-driven interactions.",
+      "Delivered proof-of-concept demos for fast iteration and design validation.",
+    ],
+    type: "work",
+  },
+  {
+    id: 5,
+    title: "C# Developer",
+    company: "Self-Directed",
+    period: "2023 — Present",
+    description: [
+      "Designed reusable systems and utilities for game engines and custom tools.",
+      "Focused on performance, modular architecture, and maintainable code.",
+      "Integrated physics, input, and gameplay state logic across Unity projects.",
+    ],
+    type: "work",
+  },
+  {
+    id: 6,
+    title: "Game Dev Student",
+    company: "Self-Learning",
+    period: "2021 — 2023",
+    description: [
+      "Studied game development, 3D math, VR interaction, and physics systems.",
+      "Built portfolio projects in Unity, Unreal, and supporting web tools.",
+      "Learned to translate player motion into responsive gameplay feel.",
     ],
     type: "education",
   },
@@ -252,12 +326,33 @@ export interface Testimonial {
 }
 
 export const testimonials: Testimonial[] = [
-  { id: 1, name: "Studio Lead", role: "Unity Team Lead", text: "Carter made a VR physics prototype and paid attention to how the movement felt." },
-  { id: 2, name: "Community Tester", role: "VR Player", text: "The movement in the fan-game prototype felt fun to try." },
-  { id: 3, name: "Project Partner", role: "Creative Technologist", text: "Carter worked through tricky physics and input problems to make useful gameplay tools." },
+  {
+    id: 1,
+    name: "Studio Lead",
+    role: "Unity Team Lead",
+    text: "Circuit shipped a responsive VR physics prototype with clean systems and strong attention to player feel.",
+  },
+  {
+    id: 2,
+    name: "Community Tester",
+    role: "VR Player",
+    text: "The Gorilla Tag-inspired movement felt natural and energetic from the first playtest.",
+  },
+  {
+    id: 3,
+    name: "Project Partner",
+    role: "Creative Technologist",
+    text: "He turned complex physics and input problems into polished gameplay tools that were easy to iterate on.",
+  },
 ];
 
-export const certificates: string[] = [];
+export const certificates = [
+  "Unity Game Development — Coursera",
+  "VR Interaction Design — Udemy",
+  "C# Programming — Pluralsight",
+  "Full-Stack Web Development — FreeCodeCamp",
+  "Game Physics Fundamentals — Udemy",
+];
 
 export const navLinks = [
   { label: "About", href: "#about" },
