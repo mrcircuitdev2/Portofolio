@@ -25,25 +25,23 @@ export default function Home() {
       <CustomCursor />
       <ParticleField />
       <Navbar />
-
       <main className="relative z-10">
         <Hero />
-        <Marquee phrases={["UNITY", "VR", "C#", "FULL-BODY PHYSICS", "GAMEPLAY SYSTEMS", "GORILLA TAG"]} />
+        <Marquee phrases={["UNITY", "VR", "C#", "GAMEPLAY", "MOVEMENT", "MADE BY CIRCUIT"]} />
         <About />
         <div className="section-divider" />
         <Skills />
-        <Marquee phrases={["HURRICANE VR", "MOTION", "IMMERSION", "INTERACTION", "PROTOTYPING", "POLISH"]} />
+        <Marquee phrases={["TRY IT", "TWEAK IT", "BREAK IT", "LEARN SOMETHING", "BUILD AGAIN"]} />
         <Experience />
         <div className="section-divider" />
         <Projects />
         <div className="section-divider" />
         <FiveM />
-        <Marquee phrases={["FIVEM", "CUSTOM FRAMEWORKS", "LUA", "NUI", "SERVER SYSTEMS", "FRAMEWORK EXPERIENCE"]} />
+        <Marquee phrases={["FIVEM", "LUA", "CUSTOM FRAMEWORK EXPERIENCE", "SERVER PROJECTS", "CIRCUIT / CONNECTED IDEAS"]} />
         <Testimonials />
         <div className="section-divider" />
         <Contact />
       </main>
-
       <Footer />
     </SmoothScroll>
   );
